@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حساب جديد - منصة ألف</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-md glass-card p-8 rounded-3xl">
+        <h2 class="text-2xl font-bold text-white text-center mb-6">حساب جديد</h2>
+        
+        <div class="space-y-4">
+            <input type="text" id="regFullName" placeholder="الاسم الكامل" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white">
+            <input type="text" id="regMobile" placeholder="رقم الموبايل" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white">
+            <input type="email" id="regEmail" placeholder="البريد الإلكتروني (اختياري)" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white">
+            <input type="text" id="regUsername" placeholder="اسم المستخدم" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white">
+            <input type="password" id="regPassword" placeholder="كلمة المرور" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white">
+            
+            <div class="flex gap-3 justify-between mt-2">
+                <button id="googleRegisterBtn" class="flex-1 bg-white/10 hover:bg-white/20 text-white py-2 rounded-lg transition">
+                    <i class="fab fa-google mr-2"></i> جوجل
+                </button>
+                <button id="microsoftRegisterBtn" class="flex-1 bg-white/10 hover:bg-white/20 text-white py-2 rounded-lg transition">
+                    <i class="fab fa-microsoft mr-2"></i> مايكروسوفت
+                </button>
+            </div>
+            
+            <button id="createAccountBtn" class="btn-primary w-full text-white font-bold py-3 rounded-xl mt-4">أنشئ حساب</button>
+            <p class="text-center text-gray-400 mt-3">
+                <a href="login.html" class="text-blue-400">↩ العودة لتسجيل الدخول</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

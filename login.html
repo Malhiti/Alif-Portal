@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - منصة ألف</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-md glass-card p-8 shadow-2xl rounded-3xl">
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-extrabold bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">منصة ألف</h1>
+            <p class="text-gray-300 mt-2">بوابة التجار الذكية</p>
+        </div>
+        
+        <div class="space-y-5">
+            <div>
+                <label class="block text-gray-200 text-sm font-semibold mb-2">اسم المستخدم</label>
+                <input type="text" id="loginUsername" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="admin">
+            </div>
+            <div>
+                <label class="block text-gray-200 text-sm font-semibold mb-2">كلمة السر</label>
+                <input type="password" id="loginPassword" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="••••••">
+            </div>
+            <button id="doLoginBtn" class="btn-primary w-full text-white font-bold py-3 rounded-xl shadow-lg text-lg">دخول</button>
+            <p class="text-center text-gray-300 mt-4">ليس لديك حساب؟ <a href="register.html" class="text-blue-400 hover:underline font-semibold">إنشاء حساب جديد</a></p>
+        </div>
+        
+        <div class="text-center text-gray-500 text-sm mt-8">Bitron Co. Copy Rights 2026 ©</div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
